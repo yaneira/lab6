@@ -1,0 +1,155 @@
+/*
+Name: Lizeth Hernandez
+Date: March 5 2022
+File Name: style.css*/
+
+/*CSS Resest*/
+body, header,nav,main,nav-ul, footer,img, h1, h3{
+  margin:0;
+  padding: 0;
+  border:0;
+}
+
+/*Style Rule for body and images*/
+body{
+  background-color: #f6eee4;
+}
+
+img{
+  max-width: 100%;
+  display: block;
+}
+/*Style rules for mobile viewporrt*/
+h1{
+  font-family: 'Emblema One', cursive;
+}
+h3{
+  font-family: 'Lora', serif;
+}
+/*Style rule for the show mobile class and hide tab-desk class*/
+.mobile{
+  display: block;
+  padding: 2%;
+  text-align: center;
+}
+.tab-desk{
+  visibility: hidden;
+}
+/*style rules for header area*/
+
+
+/*Style Rule fro navigation area*/
+nav{
+  background-color: #2a1f14;
+}
+
+nav ul{
+  list-style: none;
+  text-align: center;
+}
+
+nav li{
+  display:block;
+  font-size: 1.5em;
+  font-family: Geneva,Arial,sans-serif;
+  font-weight: bold;
+  border-top-width: 0.5px;
+  color:#f6eee4;
+}
+/*style rules for main contet*/
+
+
+nav li a{
+  display:block;
+  color: #f6eee4;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 2em;
+  padding-right: 2em;
+  text-decoration: none;
+}
+
+/*Style rule for main content*/
+main{
+  padding: 2%;
+  font-family: 'Lora', serif;
+  padding: 2%;
+}
+
+main p{
+  font-size: 1.25em;
+  font-size: 1.25em;
+}
+
+main h3{
+  padding-top: 2%;
+  padding-top: 2%;
+}
+
+main ul{
+  list-style: square;
+  list-style-type: square;
+}
+
+.link{
+  color: #4d3319;
+  text-decoration: none;
+  font-weight: bold;
+  font-style: italic;
+  color:#4d3319;
+  text-decoration: none;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.action{
+  font-size: 1.75em;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.75em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.round{
+  border-radius: 6px;
+}
+
+#info{
+  margin-left: 10%;
+}
+
+#contact{
+  text-align: center;
+}
+
+.tel-link-round{
+  background-color: #2a1f14;
+  padding: 2%;
+  width: 80%;
+  margin:0 auto;
+  color: #f6eee4;
+  text-decoration: none;
+  font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+    display:block;
+    font-size: 1.5em;
+}
+
+/*style rule for footer content*/
+footer{
+  text-align: center;
+  font-size: 0.85em;
+  background-color: #2a1f14;
+  color: #f6eee4;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 0%;
+  padding-right: 0%;
+}
+
+.footer{
+  color: #f3e6d8;
+  text-decoration: none;
+}
