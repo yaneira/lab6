@@ -153,3 +153,68 @@ footer{
   color: #f3e6d8;
   text-decoration: none;
 }
+/*Media query for tablet viewport*/
+@media screen and (min-width:620px), print{
+  /*Tablet viewpor: show tab-desk clas, hide mobile class*/
+.tab-desk{
+  display:block;
+}
+
+.mobile{
+  display:none;
+}
+
+  /*Tablet viewport: style rules for nav area*/
+  nav li{
+    border-top: none;
+    display: inline-block;
+    font-size: 1.25em;
+  }
+  nav li{
+    padding: 0.5em;
+  }
+}
+
+/*media query for large desktop viewports*/
+@media screen and (min-width:1921px){
+  body{
+    background:linear-gradient(#f6eee4,#78593a)
+  }
+  #wrapper{
+    width:1920px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  main{
+    background-color: #f6eee4;
+  }
+}
+/*Media query for print*/
+@media print{
+  body{
+    background: #ffffff;
+    color:000000;
+  }
+}
+
+/*Media query for desktop viewport*/
+@media screen and (min-width:1000px), print{
+  /*Desktop viewport: style rule for nav area*/
+  nav li{
+    font-size: 1.5em;
+  }
+  nav li a{
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    color:#2a1f14;
+    background-color: #f6eee4;
+  }
+  /*Desktop viewport: style rule for main content*/
+  #info ul{
+    margin-left: 5%;
+  }
+}

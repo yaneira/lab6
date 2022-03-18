@@ -71,11 +71,13 @@ main{
 main p {
   font-size: 1.25em;
 }
+
 .action{
   font-size: 1.25em;
   color: #373684;
   font-weight: bold;
 }
+
 #Piano, #Guitar, #Violin{
   margin: 0 2%;
 }
@@ -120,8 +122,6 @@ main p {
   height:50%;
 }
 
-
-
 /*Style rules for footer content*/
 footer{
   text-align: center;
@@ -133,3 +133,78 @@ footer a{
   color:#4645a8;
   text-decoration: none;
 }
+
+
+/*Media query for tablet viewport*/
+@media screen and (min-wwidth:500px), print{
+  /*tablet viewport: show tab-desk class, hide mobile class*/
+    .tab-desk{
+    display: block;
+    }
+    .mobile{
+    display:none;
+    }
+
+/*tablet viewport: style rule for header content*/
+    span.tab-desk{
+    display: inline;
+    }
+
+/*tablet viewport: style rule for nav area*/
+    nav li{
+      border-top: none;
+      display: inline-block;
+      font-size: 1.5em;
+      border-right: 1px solid #e5e9fc;
+      border-right: none;
+      padding-top: 0.25em;
+      padding-bottom: 0.25em;
+      padding-left: 0.5em;
+      padding-right: 0.5em;
+    }
+
+/*tablet viewport: style rule for map*/
+      .map{
+        width: 500px;
+        height: 450px;
+      }
+  }
+
+/*Media query for desktop viewport*/
+@media screen and (min-width:769px),print{
+/*Desktop viewport: style rule for header*/
+      header{
+        padding: 2%;
+      }
+/*Desktop viewport: style rule for nav area*/
+      nav li a {
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+        color:#373684;
+        background-color: #e5e9fc;
+      }
+/*Desktop viewport: style rules for main content*/
+        #info ul{
+          margin-left: 5%;
+        }
+        main h3{
+          font-size: 1.5em;
+        }
+        #Piano,#Guitar,#Violin{
+          width: 29%;
+          float:left;
+          margin-top: 0;
+          margin-bottom: 0;
+          margin-left: 2%;
+          margin-right: 2%;
+        }
+      }
+/*Media query for print*/
+@media print{
+      body{
+        background-color: #fff;
+        color:#000;
+      }
+  }
